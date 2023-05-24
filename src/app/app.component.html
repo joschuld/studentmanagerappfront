@@ -23,7 +23,8 @@
     </div>
 </nav>
 
-<div class="container">
+<div class="container" id="main-container">
+
     <div class="row">
         <div class="col-md-6 col-xl-3" *ngFor = 'let student of students'>
             <div class="card m-b-30">
@@ -61,3 +62,12 @@
        
     </div>
 </div>
+
+<!-- Add Student modal -->
+<div class = "modal fade" id ="addStudentModal" tabindex="-1" role="dialog" aria-labelledby="addStudentModalLabel" aria-hidden="true"></div>
+
+<!-- Edit Student modal -->
+<div class = "modal fade" id ="updateStudentModal" tabindex="-1" role="dialog" aria-labelledby="editStudentModalLabel" aria-hidden="true"></div>
+
+<!-- Delete Student modal -->
+<div class = "modal fade" id ="deleteStudentModal" tabindex="-1" role="dialog" aria-labelledby="deleteStudentModalLabel" aria-hidden="true"></div> 
